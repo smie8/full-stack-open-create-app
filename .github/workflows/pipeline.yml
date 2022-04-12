@@ -7,8 +7,15 @@ on:
 
 jobs:
   simple_pipeline:
+    # set up the environment (same as we want to run in production)
     runs-on: ubuntu-20.04
     steps:
-      - name: Hello world
-        run: |
-          echo "Hello world"
+      # checkout the code from git repository, by default virtual env does not have any code in it
+      - uses: actions/checkout@v3
+      # set up node and define the version we want to use in production
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      # lint our code
+      - name: lint
+        run: npm run lint

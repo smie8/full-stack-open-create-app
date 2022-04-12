@@ -9,6 +9,7 @@
       "error",
       "never"
     ],
+    "linebreak-style": 0,
     "max-len": [1, 200],
     "no-shadow": 0,
     "no-plusplus": 0,
