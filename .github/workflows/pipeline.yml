@@ -40,7 +40,7 @@ jobs:
           heroku_app_name: "full-stack-open-create-app"
           heroku_email: ${{ secrets.EMAIL }}
           healthcheck: "https://full-stack-open-create-app.herokuapp.com/health"
-          checkstring: "Welcome"
+          checkstring: "ok"
           rollbackonhealthcheckfailed: true
   tag_release:
     needs: [simple_pipeline]
