@@ -1,4 +1,4 @@
-name: CI/CD pipeline
+name: basic CI/CD pipeline
 
 on:
   push:
