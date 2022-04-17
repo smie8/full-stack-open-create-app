@@ -39,6 +39,3 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "full-stack-open-create-app"
           heroku_email: ${{ secrets.EMAIL }}
-          healthcheck: "https://full-stack-open-pokedex-smie8.herokuapp.com/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
