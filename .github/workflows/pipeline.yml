@@ -39,7 +39,7 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "full-stack-open-create-app"
           heroku_email: ${{ secrets.EMAIL }}
-          healthcheck: "https://full-stack-open-create-app.herokuapp.com/health"
+          healthcheck: "https://full-stack-open-create-app.herokuapp.com/api/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
   tag_release:
