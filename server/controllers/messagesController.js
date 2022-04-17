@@ -28,8 +28,13 @@ const destroy = async (req, res) => {
   res.sendStatus(200)
 }
 
+const healthCheck = async (req, res) => {
+  res.send('ok')
+}
+
 module.exports = {
   getAll,
   create,
   destroy,
+  healthCheck,
 }

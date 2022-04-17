@@ -6,5 +6,6 @@ const router = Router()
 router.get('/messages', messages.getAll)
 router.post('/messages', messages.create)
 router.delete('/messages/:id', messages.destroy)
+router.get('/health', messages.healthCheck)
 
 module.exports = router
