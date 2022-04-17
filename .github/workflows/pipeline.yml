@@ -18,7 +18,7 @@ jobs:
       # set up node and define the version we want to use in production
       - uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '15'
       # install dependencies
       - name: npm install
         run: npm install
